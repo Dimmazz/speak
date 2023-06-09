@@ -1,0 +1,28 @@
+// colors
+$color-primary: #00B9B6;
+
+$color-text-main: #333;
+$color-text-title: #0E0E0F;
+$color-text-contrast: #FFA800;
+
+$color-white: #FFFFFF; 
+
+$color-bg-main: rgba($color: #F9FDFF, $alpha: 0.7);
+$color-bg-btn: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+
+$color-box-shadow: #dce8f3;
+
+@mixin custom-box-shadow($posX, $posY, $blur, $spread, $color) {
+    box-shadow: $posX $posY $blur $spread $color;
+}
+
+// width screen
+
+
+// fontSize
+$fz-main: 18px;
+$fz-primary: 20px;
+$fz-large: 36px;
+$fz-large-main: 32px;
+$fz-small: 16px;
+

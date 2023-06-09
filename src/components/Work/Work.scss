@@ -1,0 +1,67 @@
+@import "../BasicStyles/vars";
+
+.work {
+    height: 740px;
+
+    background: url("../../assets/img/webp/work-mobile.png") no-repeat;
+    background-position: center;
+}
+
+.work__title {
+    padding-bottom: 115px;
+}
+
+.work__works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 105px;
+}
+
+.work__work-item {
+    display: flex;
+    min-height: 85px;
+    margin-bottom: 20px;
+
+    &:hover .work-item__index {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+}
+
+.work-item__index{
+    font-weight: 700;
+    font-size: $fz-primary;
+
+    color: $color-primary;
+    background-color: rgba(0, 185, 182, 0.1);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: color .2s ease-in,
+                    background-color .2s ease-in;
+}
+
+.work-item__inner{
+    width: 310px;
+    padding-left: 17px;
+}
+
+.work-item__title {
+    font-weight: 700;
+    font-size: $fz-primary;
+
+    color: $color-text-title;
+}
+
+// .work-item__desc {}
+
+.work__btn{
+    padding-top: 40px;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+@import "../BasicStyles/vars";
+
+.steps {
+    height: 500px;
+
+    background: url("../../assets/img/webp/steps.png") no-repeat;
+    background-position: bottom right;
+}
+
+.steps__title {
+    padding-bottom: 62px;
+}
+
+.steps__inner {
+    max-width: 740px;
+    
+    /* Убираем исходные маркеры */
+    list-style-type: none;
+
+    /* Задаём имя счетчика */
+    counter-reset: my-counter;
+}
+
+.steps__step {
+    padding-left: 50px;
+    padding-bottom: 70px;
+
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: -25%;
+        left: 0;
+        /* Выводим число */
+        content: counter(my-counter);
+
+        /* Увеличиваем значение счётчика */
+        counter-increment: my-counter;
+
+        font-weight: 700;
+        font-size: 128px;
+
+        color: $color-primary;
+
+        opacity: 0.1;
+    }
+}
+
+.step__title {
+    font-weight: 700;
+    font-size: $fz-primary;
+    color: $color-text-title;
+}
+
+// .step__desc {}

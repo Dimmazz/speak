@@ -1,0 +1,62 @@
+@import "../BasicStyles/vars";
+
+.advantage {
+    // height: 519px;
+    padding: 100px 0;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url("../../assets/img/webp/advantage.png") no-repeat;
+        background-position: center -50px;
+
+        height: 540px;
+        width: 270px;
+
+        position: absolute;
+        top: 0;
+        left: 0;    
+    }
+}
+
+.advantage__wrapper {
+    height: 519px;
+
+    background-color: rgba(0, 185, 182, .1);
+    border-radius: 24px;
+}
+
+.advantage__text {
+    padding-top: 50px;
+    max-width: 710px;
+    margin-left: 380px;
+    z-index: -1;
+}
+
+.advantage__title {
+    padding-bottom: 40px;
+}
+
+.advantage__list {
+    list-style: disc;
+}
+
+.advantage__item {
+    padding-bottom: 20px;
+
+    &::marker {
+        color: $color-primary;
+    }
+}
+
+.advantage__item-title {
+    font-weight: 700;
+    font-size: $fz-primary;
+
+    color: $color-text-title;
+
+    padding-bottom: 5px;
+}
+
+// .advantage__item-desc {}

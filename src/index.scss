@@ -1,0 +1,104 @@
+@import "./components/BasicStyles/_default.scss";
+
+.btn {
+    max-width: max-content;
+    font-size: $fz-small;
+    letter-spacing: 0.1em;
+    background: transparent;
+
+    padding: 0;
+
+    white-space: nowrap;
+
+    color: $color-primary;
+    
+    @include custom-box-shadow(0px, 0px, 15px, 20px, rgba($color: $color-box-shadow, $alpha: 0.25));
+
+    border: none;
+    outline: none;
+
+    font-weight: 700;
+
+    transition: box-shadow .3s ease-in,
+        border .2s ease-in,
+        color .2s ease-in;
+
+    &:hover {
+        @include custom-box-shadow(2px, 2px, 15px, 20px, rgba($color: $color-primary, $alpha: 0.25));
+    }
+
+    // @media (max-width: 1024px) {
+    //     font-size: 16px;
+    //     padding: 10px 22px;
+    // }
+
+    // @media (max-width: 768px) {
+    //     font-size: 14px;
+    //     padding: 8px 16px;
+    // }
+}
+
+.btn--transparent {
+    padding: 12px 30px;
+    background: $color-white;
+    border-radius: 12px;
+}
+
+.btn--filled {
+    color: $color-white;
+    background: $color-bg-btn;
+    padding: 12px 30px 13px;
+    border-radius: 12px;
+}
+
+.btn--border{
+    color: $color-primary;
+
+    background: transparent;
+    border: 1px solid $color-primary;
+
+    padding: 12px 30px 13px;
+    border-radius: 12px;
+}
+
+.logo {
+    height: 36px;
+    width: 183px;
+    cursor: pointer;
+
+    background: url("./assets/img/svg/logo.svg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    & + & {
+        margin-left: 40px;
+    }
+}
+
+.title-section-center {
+    font-weight: 700;
+    font-size: $fz-large-main;
+    text-align: center;
+
+    color: $color-text-title;
+}
+
+.subtitle-section {
+    color: $color-primary;
+}
+
+.title-section {
+    font-weight: 700;
+    font-size: $fz-large;
+    color: $color-text-title;
+}
+
+.desc__span{
+    color: $color-primary;
+}

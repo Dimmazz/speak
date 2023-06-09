@@ -1,0 +1,71 @@
+@import "../BasicStyles/vars";
+
+.app__title {
+    font-weight: 700;
+    font-size: $fz-large-main;
+    color: $color-text-title;
+
+    padding-bottom: 38px;
+}
+
+.app__mini-banner {
+    padding-left: 110px;
+    padding-bottom: 72px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        width: 90px;
+        height: 90px;
+
+        background: url("../../assets/img/svg/mini-logo.svg") no-repeat;
+    }
+}
+
+.mini-banner__title {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $color-primary;
+}
+
+// .mini-banner__desc {
+
+// }
+
+.app__btns {
+    display: flex;
+}
+
+.app__btn-apple {
+    width: 140px;
+    height: 60px;
+    border-bottom: none;
+    cursor: pointer;
+
+    background: url("../../assets/img/svg/appstore.svg") no-repeat;
+    background-position: top center;
+
+    &:hover {
+        border-bottom: none;
+    }
+}
+
+.app__btn-google {
+    width: 140px;
+    height: 60px;
+    border-bottom: none;
+    cursor: pointer;
+
+    background: url("../../assets/img/svg/playstore.svg") no-repeat;
+    background-position: top center;
+
+    &:hover {
+        border-bottom: none;
+    }
+}

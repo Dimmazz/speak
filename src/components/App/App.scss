@@ -1,0 +1,18 @@
+@import "../BasicStyles/vars";
+
+.app {
+    height: 340px;
+
+    display: flex;
+}
+
+.app__video {
+    width: calc(50% - 50px);
+    min-width: 400px;
+    height: 100%;
+
+    margin-right: 50px;
+
+    background-color: #333;
+    border-radius: 24px;
+}

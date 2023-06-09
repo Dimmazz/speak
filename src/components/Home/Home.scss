@@ -1,0 +1,24 @@
+@import "../BasicStyles/vars";
+
+.home {
+    height: 468px;
+    padding-top: 40px;
+
+    background: url("../../assets/img/webp/home-man.png") no-repeat;
+    background-position: right;
+}
+
+.home__subtitle {
+    color: $color-primary;
+    padding-bottom: 5px;
+}
+
+.home__title {
+    font-weight: 700;
+    font-size: 48px;
+    color: $color-text-title;
+
+    padding-bottom: 50px;
+}
+
+// .home__btn {}
